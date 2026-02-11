@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berberos - Premium Berberlik</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Berberos</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section id="anasayfa" class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active" style="background-image: url('images/ana_resim.jpeg');">
+            <div class="hero-content">
+                <h1>Premium <span class="highlight">Berberlik</span> Deneyimi</h1>
+                <p>Klasik berberlik sanatını modern tekniklerle buluşturan, size özel tasarlanmış premium hizmet. 2012'dan beri Denizli'de.</p>
+                <a href="#iletisim" class="btn-primary">Randevu Al</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="background-image: url('images/ic_1.png');">
+            <div class="hero-content">
+                <h1>Uzman <span class="highlight">Berberler</span></h1>
+                <p>Deneyimli ekibimizle size en iyi hizmeti sunuyoruz. Her kesim bir sanat eseridir.</p>
+                <a href="#hizmetler" class="btn-primary">Hizmetlerimiz</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="background-image: url('images/ic_2.png');">
+            <div class="hero-content">
+                <h1>Modern <span class="highlight">Salon</span></h1>
+                <p>Rahat ve hijyenik ortamımızda kendinizi özel hissedin. Premium deneyim için bizi tercih edin.</p>
+                <a href="#galeri" class="btn-primary">Galeri</a>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hero-slide" style="background-image: url('images/DJI_0125.JPG');">
+            <div class="hero-content">
+                <h1>Berberos'a <span class="highlight">Hoş Geldiniz</span></h1>
+                <p>Stilinizi keşfedin, kendinizi iyi hissedin. Premium berberlik deneyimi için bizi ziyaret edin.</p>
+                <a href="#hakkimizda" class="btn-primary">Hakkımızda</a>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-arrow prev" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow next" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="slider-controls">
+            <div class="slider-dot active" onclick="goToSlide(1)"></div>
+            <div class="slider-dot" onclick="goToSlide(2)"></div>
+            <div class="slider-dot" onclick="goToSlide(3)"></div>
+            <div class="slider-dot" onclick="goToSlide(4)"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Hizmetlerimiz</h2>
+                <p>Size özel tasarlanmış premium hizmetlerimizle stilinizi keşfedin</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Saç Kesimi</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <p>Modern ve klasik tarzlarda profesyonel saç kesimi hizmeti. Yüz şeklinize ve stilinize uygun kesimler.</p>
+                        <div class="service-price">450₺</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-prescription-bottle"></i>
+                        </div>
+                        <h3>Sakal Tıraşı</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <p>Geleneksel ustura ile yapılan rahatlatıcı sakal tıraşı ve yüz hatlarınıza uygun şekillendirme hizmeti.</p>
+                        <div class="service-price">250₺</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Cilt Bakımı</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <p>Profesyonel cilt temizliği, peeling, yüz maskesi ve saç bakımı uygulamaları ile cildinizi yenileyin.</p>
+                        <div class="service-price">600₺</div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Çocuk Kesimi</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <p>Çocuklarınız için rahat ve eğlenceli saç kesimi deneyimi.</p>
+                        <div class="service-price">400₺</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>VIP Paket</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <p>Saç kesimi, sakal tıraşı ve cilt bakımını içeren premium hizmet paketi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="section gallery-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Galeri</h2>
+                <p>Çalışmalarımızdan örnekler</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/dıs_cekim.JPG" alt="Berber Shop">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ic_3.png" alt="Saç Kesimi">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ic_4.png" alt="Berber">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ic_5.png" alt="İç Mekan">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ic_1.png" alt="Tıraş">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="section about-section">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Berberos Hakkında</h3>
+                    <p>2012 yılından beri Denizli'de hizmet veren Berberos, klasik berberlik sanatını modern tekniklerle birleştirerek müşterilerine en kaliteli hizmeti sunmaktadır.</p>
+                    <p>Deneyimli ve uzman ekibimizle, her müşterimize özel ve kişiselleştirilmiş hizmet anlayışını benimsiyoruz. Hijyen, kalite ve müşteri memnuniyeti bizim önceliğimizdir.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>13+</h4>
+                            <p>Yıllık Tecrübe</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5000+</h4>
+                            <p>Mutlu Müşteri</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Memnuniyet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/logo_son.jpg" alt="Berber Shop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="section contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>İletişim</h2>
+                <p>Bize ulaşın, randevu alın</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-item-content">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Adres</h4>
+                                <p>Akkonak Mah. Yeşilköy Caddesi No: 170/A Merkezefendi / Denizli</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-content">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefon</h4>
+                                <p>+90 554 265 2425</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-content">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>E-posta</h4>
+                                <p>info@berberos.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-content">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/905542652425" target="_blank">WhatsApp ile İletişime Geç</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-content">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Çalışma Saatleri</h4>
+                                <p>Pazartesi - Cumartesi: 09:00 - 20:00<br>Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Randevu Al Formu - Şimdilik yorum satırında
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Telefon Numaranız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-posta Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option selected>Hizmet Seçiniz</option>
+                                <option value="1">Saç Kesimi</option>
+                                <option value="2">Sakal Tıraşı</option>
+                                <option value="3">Cilt Bakımı</option>
+                                <option value="4">Saç Boyama</option>
+                                <option value="5">Çocuk Kesimi</option>
+                                <option value="6">VIP Paket</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Mesajınız (Opsiyonel)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Randevu Talebi Gönder</button>
+                    </form>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Berberos</h3>
+                <p>Klasik berberlik sanatını modern tekniklerle buluşturan premium berberlik deneyimi. 2012'dan beri Denizli'de hizmetinizdeyiz.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="#anasayfa">Anasayfa</a></li>
+                    <li><a href="#hizmetler">Hizmetler</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Hizmetler</h4>
+                <ul>
+                    <li><a href="#">Saç Kesimi</a></li>
+                    <li><a href="#">Sakal Tıraşı</a></li>
+                    <li><a href="#">Cilt Bakımı</a></li>
+                    <li><a href="#">Saç Boyama</a></li>
+                    <li><a href="#">VIP Paket</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a href="#">Adres</a></li>
+                    <li><a href="#">Telefon</a></li>
+                    <li><a href="#">E-posta</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Berberos. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/905542652425?text=Merhaba%20Berberos,%20randevu%20almak%20istiyorum." class="whatsapp-btn" target="_blank" title="WhatsApp ile İletişime Geç">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
